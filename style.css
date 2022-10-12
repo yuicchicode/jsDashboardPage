@@ -26,6 +26,20 @@
     --box-shadow: 0 2rem 3rem var(--color-light);
 }
 
+/* ---- Dark Theme Variables ---- */
+
+.dark-theme-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +171,7 @@ aside .close {
 /* ---- Sidebar ---- */
 
 aside .sidebar {
-    background: white;
+    background: var(--color-white);
     display: flex;
     flex-direction: column;
     height: 86vh;
@@ -589,7 +603,7 @@ main .recent-orders a {
 
     aside {
         position: fixed;
-        left: 0;
+        left: -100%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -597,6 +611,13 @@ main .recent-orders a {
         height: 100vh;
         padding-left: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
     }
 
     aside .logo{
@@ -624,6 +645,7 @@ main .recent-orders a {
     aside .close {
         display: inline-block;
         cursor: pointer;
+        margin-right: 1rem;
     }
 
 
