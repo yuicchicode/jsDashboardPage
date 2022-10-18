@@ -134,7 +134,7 @@ small {
 
 .-bg-dark {
     background: #27282f;
-    bpx-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8rem 0.8rem rgba(0, 0, 0, 0.2);
 }
 
 /* ~~~~~~ NAV BAR ~~~~~~*/
@@ -227,6 +227,6 @@ nav .profile-area .profile-photo {
 }
 
 nav .profile-area button {
-    display: none;;
+    display: none;
 }
 
