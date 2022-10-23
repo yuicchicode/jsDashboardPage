@@ -254,7 +254,7 @@ main aside button#close-btn {
 main aside .sidebar a {
     display: flex;
     align-items: center;
-    gap 1.2rem;
+    gap: 1.2rem;
     height: 4.2rem;
     color: var(--color-gray-light);
     position: relative;
@@ -336,7 +336,7 @@ main section.middle .header {
     gap: 1rem;
 }
 
-main section.middle .header input [type='date'] {
+main section.middle .header input[type='date'] {
     padding: 0.5rem 2rem;
     border-radius: var(--border-radius-2);
     background: var(--color-white);
@@ -360,10 +360,10 @@ main section.middle .cards .card {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 2rem 3rem var(--color-danger-light);
-    transform: all 200ms ease;
+    transition: all 300ms ease;
 }
 
-main section.middle .cards .card:hover {
+main section.middle .cards .card:hover{
     box-shadow: none;
 }
 
@@ -372,13 +372,9 @@ main section.middle .cards .card:nth-child(2){
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
-main section.middle .cards .card:nth-child(3) {
+main section.middle .cards .card:nth-child(3){
     background: linear-gradient(#5d70ff, #5719c2);
     box-shadow: 0 2rem 3rem var(--color-primary-light);
-}
-
-main section.middle .cards .card:hover {
-    box-shadow: none;
 }
 
 main section.middle .card .top {
@@ -397,10 +393,24 @@ main section.middle .card .top .left h2 {
     font-size: 1.4rem;
 }
 
-main section.middle .card .top .left img {
+main section.middle .card .top .left {
     width: 2.3rem;
     height: 2.3rem;
     border: 1px solid white;
     border-radius: var(--border-radius-2);
     padding: 0.4rem;
 }
+
+main section.middle .card .top img.right {
+    width: 3.5rem;
+}
+
+main section.middle .card .middle{
+    display: flex;
+    justify-content: space-between;
+}
+
+main section.middle .card .middle .chip {
+    width:3.5rem;
+}
+
