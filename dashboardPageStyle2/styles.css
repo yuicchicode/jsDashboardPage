@@ -212,7 +212,7 @@ nav .profile-area .theme-btn .active {
     color: var(--color-white);
 }
 
-nav .prifile-area .profile {
+nav .profile-area .profile {
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -327,3 +327,13 @@ main aside .updates a {
 main aside .updates a:hover {
     box-shadow: 0 1rem 2rem var(--color-primary-light);
 }
+
+/*-------- middle -----------*/
+
+main section.middle .header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main section.middle .header
