@@ -414,3 +414,13 @@ main section.middle .card .middle .chip {
     width:3.5rem;
 }
 
+main section.middle .card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+main section.middle .card .bottom .right {
+    display: flex;
+    gap: 2rem;
+}
